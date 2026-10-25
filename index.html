@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guesser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Number guessing game</h1>
+    </nav>
+    <div class="container">
+        <p>This is a number guessing game in which you have maximum 10 attempt to guess a right number
+        </p>
+        <form class="form">
+            <label for="guess">Guess a number</label>
+            <input type="number" id="guess" name="guess" placeholder="Enter your guess" min="1" max="100" required>
+            <button type="submit" id="submit">Submit guess</button>
+        </form>
+        <div class="result">
+            <p>previous guess : <span class="guesses"></span></p>
+            <p>attempt left : <span class="left">10</span></p>
+            <p class="loworhi"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
